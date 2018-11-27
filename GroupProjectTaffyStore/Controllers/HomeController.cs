@@ -39,5 +39,11 @@ namespace GroupProjectTaffyStore.Controllers
 
             return View();
         }
+        public ActionResult Suggestion()
+        {
+            ViewBag.Message = "Your Suggestion page.";
+
+            return View();
+        }
     }
 }
