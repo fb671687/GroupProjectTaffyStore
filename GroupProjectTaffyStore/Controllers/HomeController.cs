@@ -26,5 +26,12 @@ namespace GroupProjectTaffyStore.Controllers
 
             return View();
         }
+
+        public ActionResult Order()
+        {
+            ViewBag.Message = "Your order page.";
+
+            return View();
+        }
     }
 }
