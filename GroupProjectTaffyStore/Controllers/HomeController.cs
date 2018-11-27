@@ -33,5 +33,11 @@ namespace GroupProjectTaffyStore.Controllers
 
             return View();
         }
+        public ActionResult Catalog()
+        {
+            ViewBag.Message = "Your Catalog page.";
+
+            return View();
+        }
     }
 }
