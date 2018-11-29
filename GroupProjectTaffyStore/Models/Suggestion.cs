@@ -10,7 +10,7 @@ namespace GroupProjectTaffyStore.Models
         public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Suggestion { get; set; }
+        public string Description { get; set; }
 
     }
 }
