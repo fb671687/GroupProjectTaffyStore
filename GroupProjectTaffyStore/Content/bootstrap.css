@@ -51,6 +51,10 @@
     box-sizing: border-box;
 }
 
+.logo {
+    text-align: center;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
