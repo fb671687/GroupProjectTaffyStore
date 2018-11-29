@@ -18,40 +18,40 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("About","Home")">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Catalog","Home")">Catalog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Order","Home")">Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Suggestion","Home")">Suggestions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Contact","Home")">Contacts</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("About","Home")">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("Catalog","Home")">Catalog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("Order","Home")">Order</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("Suggestion","Home")">Suggestions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="@Url.Action("Contact","Home")">Contacts</a>
+				</li>
+			</ul>
+
+			@Html.Partial("_LoginPartial")
+			
+
+		</div>
     </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Sugar Whip</p>
-            <p>Please be patient, we are still under construction!</p>
-        </footer>
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Sugar Whip</p>
+			<p>Please be patient, we are still under construction!</p>
+		</footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
