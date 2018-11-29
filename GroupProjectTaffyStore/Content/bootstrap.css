@@ -57,6 +57,10 @@
 
 
 
+.test {
+    color: black;
+    background-color: black;
+}
 html {
     font-family: sans-serif;
     line-height: 1.15;
