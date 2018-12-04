@@ -45,5 +45,12 @@ namespace GroupProjectTaffyStore.Controllers
 
             return View();
         }
+
+        public ActionResult AdminManage()
+        {
+            ViewBag.Message = "Your Manage page.";
+
+            return View();
+        }
     }
 }
