@@ -13,12 +13,12 @@ namespace GroupProjectTaffyStore.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201811292046293_AddSuggestionClass"; }
+            get { return "201812042012335_AddSuggestionClass"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target
