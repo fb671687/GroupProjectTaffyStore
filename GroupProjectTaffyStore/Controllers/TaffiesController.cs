@@ -17,6 +17,7 @@ namespace GroupProjectTaffyStore.Controllers
         // GET: Taffies
         public ActionResult Index()
         {
+            var taffy = db.Taffies.Include(a => a.ID);
             return View(db.Taffies.ToList());
         }
 
