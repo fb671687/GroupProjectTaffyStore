@@ -197,6 +197,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TaffiesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -303,6 +304,11 @@
     <Content Include="Views\Home\Catalog.cshtml" />
     <Content Include="Views\Home\Order.cshtml" />
     <Content Include="Views\Home\Suggestion.cshtml" />
+    <Content Include="Views\Taffies\Create.cshtml" />
+    <Content Include="Views\Taffies\Delete.cshtml" />
+    <Content Include="Views\Taffies\Details.cshtml" />
+    <Content Include="Views\Taffies\Edit.cshtml" />
+    <Content Include="Views\Taffies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
