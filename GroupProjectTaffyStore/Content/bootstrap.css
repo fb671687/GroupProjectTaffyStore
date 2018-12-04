@@ -4321,7 +4321,7 @@ input[type="button"].btn-block {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    background-color: black;
+    
     color: white;
 }
 
@@ -4423,6 +4423,12 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+
+}
+
+.nav a {
+    color: white;
+
 }
 
     .navbar > .container,
@@ -4476,6 +4482,7 @@ input[type="button"].btn-block {
         position: static;
         float: none;
     }
+
 
 .navbar-text {
     display: inline-block;
