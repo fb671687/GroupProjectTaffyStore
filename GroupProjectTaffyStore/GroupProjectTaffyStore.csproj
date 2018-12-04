@@ -209,10 +209,6 @@
     <Compile Include="Migrations\201811292021583_AddTaffyClass.Designer.cs">
       <DependentUpon>201811292021583_AddTaffyClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811292046293_AddSuggestionClass.cs" />
-    <Compile Include="Migrations\201811292046293_AddSuggestionClass.Designer.cs">
-      <DependentUpon>201811292046293_AddSuggestionClass.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -332,9 +328,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811292021583_AddTaffyClass.resx">
       <DependentUpon>201811292021583_AddTaffyClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811292046293_AddSuggestionClass.resx">
-      <DependentUpon>201811292046293_AddSuggestionClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
