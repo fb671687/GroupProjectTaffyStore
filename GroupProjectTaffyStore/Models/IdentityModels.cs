@@ -34,5 +34,9 @@ namespace GroupProjectTaffyStore.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<GroupProjectTaffyStore.Models.Cart> Carts { get; set; }
+
+        public System.Data.Entity.DbSet<GroupProjectTaffyStore.Models.Order> Orders { get; set; }
     }
 }
