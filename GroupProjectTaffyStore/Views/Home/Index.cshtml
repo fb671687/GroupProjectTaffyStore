@@ -1,29 +1,33 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="jumbotron">
-	
-	<h1>Sugar Whip.</h1>
-	<p class="lead">Sugar Whip is a website for all your taffy needs.</p>
-	<p><a href="@Url.Action("About", "Home")" class="btn btn-primary btn-lg">Learn more About Us &raquo;</a></p>
-</div>
+<div class="jumbotron" style="background-color:#FFC0CB">
+    <img src="~/Images/Cherry.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
+    <img src="~/Images/Orange.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
+    <img src="~/Images/RedVelvetCake.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
+    <img src="~/Images/Eggnog.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
+    <h1>Sugar Whip.</h1>
+    <p class=" ">Sugar Whip is a website for all your taffy needs.</p>
+    <p><a href="@Url.Action("About", "Home")" class="btn btn-primary btn-lg">Learn more About Us &raquo;</a></p>
 
-<div class="row">
-	<div class="col-md-4">
-		<h2>Check Out Our Flavors.</h2>
-		<p>
-			We have many flavors to choose from.
-		</p>
-		<p><a class="btn btn-default" href="@Url.Action("Catalog", "Home")">Catalog &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-		<h2>Have a Suggestion?</h2>
-		<p>We'd love to hear from you.</p>
-		<p><a class="btn btn-default" href="@Url.Action("Suggestion", "Home")">Suggestions &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-		<h2>Get ahold of Us.</h2>
-		<p>Have a question or comment? Let us know.</p>
-		<p><a class="btn btn-default" href="@Url.Action("Contact", "Home")">Contact &raquo;</a></p>
-	</div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Check Out Our Flavors.</h2>
+            <p>
+                We have many flavors to choose from.
+            </p>
+            <p><a class="btn btn-default" href="@Url.Action("Catalog", "Home")">Catalog &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Have a Suggestion?</h2>
+            <p>We'd love to hear from you.</p>
+            <p><a class="btn btn-default" href="@Url.Action("Suggestion", "Home")">Suggestions &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get ahold of Us.</h2>
+            <p>Have a question or comment? Let us know.</p>
+            <p><a class="btn btn-default" href="@Url.Action("Contact", "Home")">Contact &raquo;</a></p>
+        </div>
+    </div>
 </div>

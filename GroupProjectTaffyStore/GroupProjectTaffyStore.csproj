@@ -201,17 +201,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811291951187_AddCustomerClass.cs" />
-    <Compile Include="Migrations\201811291951187_AddCustomerClass.Designer.cs">
-      <DependentUpon>201811291951187_AddCustomerClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811292021583_AddTaffyClass.cs" />
-    <Compile Include="Migrations\201811292021583_AddTaffyClass.Designer.cs">
-      <DependentUpon>201811292021583_AddTaffyClass.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201812062023352_AddManufacturerClass.cs" />
     <Compile Include="Migrations\201812062023352_AddManufacturerClass.Designer.cs">
       <DependentUpon>201812062023352_AddManufacturerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812111924187_Initial.cs" />
+    <Compile Include="Migrations\201812111924187_Initial.Designer.cs">
+      <DependentUpon>201812111924187_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -328,14 +324,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811291951187_AddCustomerClass.resx">
-      <DependentUpon>201811291951187_AddCustomerClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811292021583_AddTaffyClass.resx">
-      <DependentUpon>201811292021583_AddTaffyClass.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812062023352_AddManufacturerClass.resx">
       <DependentUpon>201812062023352_AddManufacturerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812111924187_Initial.resx">
+      <DependentUpon>201812111924187_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
