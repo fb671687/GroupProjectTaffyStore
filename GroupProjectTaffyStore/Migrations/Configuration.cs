@@ -10,7 +10,7 @@ namespace GroupProjectTaffyStore.Migrations
         public Configuration()
         {
 
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(GroupProjectTaffyStore.Models.ApplicationDbContext context)

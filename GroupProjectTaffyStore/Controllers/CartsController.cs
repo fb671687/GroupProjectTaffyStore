@@ -10,108 +10,107 @@ using GroupProjectTaffyStore.Models;
 
 namespace GroupProjectTaffyStore.Controllers
 {
-    public class TaffiesController : Controller
+    public class CartsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Taffies
+        // GET: Carts
         public ActionResult Index()
         {
-            var taffy = db.Taffies.Include(a => a.Manufacturer);
-            return View(db.Taffies.ToList());
+            return View(db.Carts.ToList());
         }
 
-        // GET: Taffies/Details/5
+        // GET: Carts/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Taffy taffy = db.Taffies.Find(id);
-            if (taffy == null)
+            Cart cart = db.Carts.Find(id);
+            if (cart == null)
             {
                 return HttpNotFound();
             }
-            return View(taffy);
+            return View(cart);
         }
 
-        // GET: Taffies/Create
+        // GET: Carts/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Taffies/Create
+        // POST: Carts/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Flavor,Size,Stock,Price,Manufacturer")] Taffy taffy)
+        public ActionResult Create([Bind(Include = "CartID,TaffyID,Quantity,Price,Total")] Cart cart)
         {
             if (ModelState.IsValid)
             {
-                db.Taffies.Add(taffy);
+                db.Carts.Add(cart);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(taffy);
+            return View(cart);
         }
 
-        // GET: Taffies/Edit/5
+        // GET: Carts/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Taffy taffy = db.Taffies.Find(id);
-            if (taffy == null)
+            Cart cart = db.Carts.Find(id);
+            if (cart == null)
             {
                 return HttpNotFound();
             }
-            return View(taffy);
+            return View(cart);
         }
 
-        // POST: Taffies/Edit/5
+        // POST: Carts/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Flavor,Size,Stock,Price,Manufacturer")] Taffy taffy)
+        public ActionResult Edit([Bind(Include = "CartID,TaffyID,Quantity,Price,Total")] Cart cart)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(taffy).State = EntityState.Modified;
+                db.Entry(cart).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(taffy);
+            return View(cart);
         }
 
-        // GET: Taffies/Delete/5
+        // GET: Carts/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Taffy taffy = db.Taffies.Find(id);
-            if (taffy == null)
+            Cart cart = db.Carts.Find(id);
+            if (cart == null)
             {
                 return HttpNotFound();
             }
-            return View(taffy);
+            return View(cart);
         }
 
-        // POST: Taffies/Delete/5
+        // POST: Carts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Taffy taffy = db.Taffies.Find(id);
-            db.Taffies.Remove(taffy);
+            Cart cart = db.Carts.Find(id);
+            db.Carts.Remove(cart);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
