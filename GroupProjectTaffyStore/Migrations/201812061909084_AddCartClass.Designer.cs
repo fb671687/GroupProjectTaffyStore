@@ -7,18 +7,18 @@ namespace GroupProjectTaffyStore.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddTaffyClass : IMigrationMetadata
+    public sealed partial class AddCartClass : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddTaffyClass));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddCartClass));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811292021583_AddTaffyClass"; }
+            get { return "201812061909084_AddCartClass"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target
