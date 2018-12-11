@@ -23,6 +23,7 @@ namespace GroupProjectTaffyStore.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Taffy> Taffies { get; set; }
         public DbSet<Suggestion> Suggestions { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
