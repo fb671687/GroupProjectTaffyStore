@@ -2,14 +2,15 @@
     ViewBag.Title = "Home Page";
 }
 <div class="jumbotron" style="background-color:#FFC0CB">
-    <img src="~/Images/Cherry.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
-    <img src="~/Images/Orange.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
-    <img src="~/Images/RedVelvetCake.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
-    <img src="~/Images/Eggnog.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px">
-    <h1>Sugar Whip.</h1>
-    <p class=" ">Sugar Whip is a website for all your taffy needs.</p>
-    <p><a href="@Url.Action("About", "Home")" class="btn btn-primary btn-lg">Learn more About Us &raquo;</a></p>
-
+    @*<h1 style="text-align: center">Sugar Whip.</h1>
+    <p style="text-align: center">Sugar Whip is a website for all your taffy needs.</p>
+    <p style="text-align: center"><a href="@Url.Action("About", "Home")" class="btn btn-primary btn-lg">Learn more About Us &raquo;</a></p>*@
+    <center style="text-align: center">
+        <img src="~/Images/Cherry.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px;display: block;margin-left: auto;margin-right: auto;" class="imgcenter">
+        <img src="~/Images/Orange.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px;display: block;margin-left: auto;margin-right: auto;" class="imgcenter">
+        <img src="~/Images/RedVelvetCake.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px;display: block;margin-left: auto;margin-right: auto;" class="imgcenter">
+        <img src="~/Images/Eggnog.png" width="200" height="200" style="float:right;width:130px;height:130px;padding:20px;display: block;margin-left: auto;margin-right: auto;" class="imgcenter">
+    </center>
 
     <div class="row">
         <div class="col-md-4">

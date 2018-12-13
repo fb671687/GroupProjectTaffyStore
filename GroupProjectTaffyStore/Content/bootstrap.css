@@ -4428,6 +4428,7 @@ input[type="button"].btn-block {
 
 .nav a {
     color: white;
+    margin: 10px;
 
 }
 
@@ -10243,4 +10244,11 @@ a.text-dark:hover, a.text-dark:focus {
 .taffylogo {
     max-width: 50%;
     max-height: 50%;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

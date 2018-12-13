@@ -10,53 +10,53 @@
 </head>
 <body>
     <div class="container">
-		<p class="logo"><img src="~/Images/SugarWhipLogo.PNG"/></p>
+        <p class="logo"><img src="~/Images/SugarWhipLogo.PNG" /></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><img class="taffylogo" src="~/Images/TaffyLogo.gif" width="50%" height="50%"/></a>
+        <a class="navbar-brand" href="#"><img class="taffylogo" src="~/Images/TaffyLogo.gif" width="50%" height="50%" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-		<div class="collapse navbar-collapse" id="navbarColor01">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("About","Home")">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("Catalog","Home")">Catalog</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("Order","Home")">Order</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("Suggestion","Home")">Suggestions</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("Contact","Home")">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="@Url.Action("AdminManage","Home")">Admins</a>
-				</li>
-			</ul>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("About","Home")">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Catalog","Home")">Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Order","Home")">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Suggestion","Home")">Suggestions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Contact","Home")">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("AdminManage","Home")">Admins</a>
+                </li>
+            </ul>
 
-			@Html.Partial("_LoginPartial")
-			
+            @Html.Partial("_LoginPartial")
 
-		</div>
+
+        </div>
     </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <center>
-                <p>&copy; @DateTime.Now.Year - Sugar Whip</p>
-                <p style="fon">Please be patient, we are still under construction!</p>
-                </center>
-</footer>
+   <div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <center>
+            <p>&copy; @DateTime.Now.Year - Sugar Whip</p>
+            <p style="fon">Please be patient, we are still under construction!</p>
+        </center>
+    </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
